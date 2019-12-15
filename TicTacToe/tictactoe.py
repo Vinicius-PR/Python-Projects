@@ -9,7 +9,7 @@ available = [str(num) for num in range(0, 10)]
 
 
 def display_board(a, b):
-    """Display the board game the the available spots"""
+    """Display the board game and the available spots"""
     print('Available    GAME BOARD\n' +
           '  Moves \n\n  ' +
           a[7] + '|' + a[8] + '|' + a[9] + '        ' + b[7] + '|' + b[8] + '|' + b[9] + '\n  ' +
@@ -24,7 +24,7 @@ def welcome():
 
 
 def ask_marker():
-    '''Ask for a marker from the preference of the player'''
+    """Ask the player for a marker"""
     marker = input("Player 1, which marker do you wanna be? X or O? ")
     while (marker.upper() != 'X') and (marker.upper() != 'O'):
         marker = input("Just X or O pls: ")
@@ -44,7 +44,7 @@ def check_win(board, marker):
 
 
 def check_full(board):
-    """Return true if the board is full"""
+    """Return true if the board is full of markers"""
     hold = 1
     for x in board:
         if x == ' ':
