@@ -19,10 +19,10 @@ def ask_for_value():
     while True:
         try:
             value_a = int(input("\nType the value of a: "))
-            if value_a == 0:
-                print("The value of 'a' can not be zero.")
-                raise Exception()
+            test_value_a = 10/value_a
             break
+        except ZeroDivisionError:
+            print("The value of 'a' can not be zero. Try again: ")
         except:
             print("Invalid value, try again: ")
     while True:
