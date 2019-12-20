@@ -1,0 +1,5 @@
+A simple program that, between 1 and 100:
+
+-> Print "FizzBuzz" if number is multiple of both three and five.
+-> Print "Fizz" if number is multiple of three.
+-> Print "Buzz" if number is multiple of five.
